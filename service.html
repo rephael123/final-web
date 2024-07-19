@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SLCI</title>
+    <link rel="stylesheet" href="css\service.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!--start of header-->
+    <div class="header">
+      <!--logo-->
+      <div class="logo">
+        <img src="images/shalom-removebg-preview.png" alt="Logo" />
+        <p>SHALOM LEARNING CENTER</p>
+      </div>
+
+      <!--navigation-->
+      <div class="navigation">
+        <a href="home.html">HOME</a>
+        <a href="program.html">PROGRAMS</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="location.html">LOCATION</a>
+        <!-- Open Sidebar Button -->
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a target="_blank" href="login.html">LOG IN</a>
+      <a href="service.html">SERVICES</a>
+      <a href="contact-side.html">CONTACT</a>
+      <a href="settings.html">SETTINGS</a>
+      <a href="logout.html">LOG OUT</a>
+    </div>
+    <!--End Sidebar -->
+
+    <!-- About Us Content -->
+    <div class="service">
+      <div class="sub-div">
+        <h2 onclick="toggleDropdown('dropdown1')">KINDERGARTEN</h2>
+        <div id="dropdown1" class="dropdown-content">
+          <ul>
+            <li>Nursery: 3 months - 2.5 years old</li>
+            <li>Pre-School: 2 - 4.5 years old</li>
+            <li>Kinder: 3 - 7 years old</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-div">
+        <h2 onclick="toggleDropdown('dropdown2')">ELEMENTARY</h2>
+        <div id="dropdown2" class="dropdown-content">
+          <ul>
+            <li>Grade 1: 6 - 7 years old</li>
+            <li>Grade 2: 7 - 8 years old</li>
+            <li>Grade 3: 8 - 9 years old</li>
+            <li>Grade 4: 9 - 10 years old</li>
+            <li>Grade 5: 10 - 11 years old</li>
+            <li>Grade 6: 11 - 12 years old</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End of About Us Content -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <img src="images/shalom-removebg-preview.png" alt="Logo" />
+      <p>REPHAEL DE GUZMAN BARLAAN</p>
+      <p>rephaelbarlaan123@gmail.com</p>
+    </div>
+    <!-- End of Footer -->
+
+    <script src="./js/navbar.js"></script>
+    <script src="js\dropdown.js"></script>
+  </body>
+</html>

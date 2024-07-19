@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(228, 225, 225);
+}
+
+/*start of header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  height: 110px;
+  background-color: purple;
+  color: white; /* Ensures all text in header is white */
+}
+
+/*inside of header*/
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: purple;
+}
+
+.logo img {
+  background-color: purple;
+  height: 105px;
+  width: 105px;
+  margin-right: 10px;
+}
+
+.logo p {
+  color: white;
+  background-color: purple;
+  margin: 0px;
+}
+
+.navigation {
+  background-color: purple;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+/*text inside navigation*/
+.navigation a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white; /* Ensures navigation links are white */
+  background-color: purple;
+}
+
+.navigation a:hover {
+  background-color: #444;
+  transition: 0.5s;
+}
+
+/*end of header*/
+
+/* Sidebar styling */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: purple;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  background-color: purple;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-right: 15px; /* Space between navigation links and button */
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-right 0.5s;
+  padding: 16px;
+}
+
+/* Main Content */
+.service {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.sub-div {
+  margin: 20px 0;
+}
+
+.sub-div h2 {
+  cursor: pointer;
+  color: purple;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sub-div h2:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.dropdown-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.dropdown-content ul li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.dropdown-content ul li ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.dropdown-content ul li ul li {
+  font-weight: normal;
+}
+/* Footer */
+.footer {
+  margin-top: 15px;
+  text-align: center;
+  background-color: #111;
+  font-weight: lighter;
+}
+
+.footer p {
+  margin-top: 15px;
+  text-align: center;
+  background-color: #111;
+  font-weight: lighter;
+  color: white;
+}
+
+.footer img {
+  margin-top: 15px;
+  text-align: center;
+  height: 110px;
+}
+
+ul,
+li {
+  background-color: white;
+}
